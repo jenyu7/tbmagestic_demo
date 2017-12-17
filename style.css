@@ -1,0 +1,815 @@
+@import url(http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic);
+
+html, body, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, form, label, table, caption, tbody, 
+tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font-family: tahoma;
+	background-color: transparent;
+	line-height:150%;
+	color:#5b5b5b;
+}
+
+html {
+	background-color:#fafafa;
+	background-image:url('../gfx/bg.jpg');
+	background-repeat:repeat-x;
+    overflow-x: hidden;
+	overflow-y: scroll;
+	font-size:11px;		
+}
+
+body{ height:100%; }
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Cuprum', sans-serif;
+}
+
+a {
+	color:#389ebc;
+	text-decoration:none;	
+}
+
+a:hover {
+	color:#389ebc;
+	text-decoration:underline;	
+	cursor:pointer;
+}
+
+.wrapper {
+	width:980px;
+	margin:0px auto;	
+}
+
+#top {
+	background-image:url('../gfx/top.jpg');
+	background-repeat:repeat-x;
+	height:40px;
+	overflow:hidden;
+}
+
+#top #logo {
+	padding:10px 0;	
+}
+
+	#left ul.cats {
+		position:relative;
+		z-index:999;
+		list-style:none;
+		padding:0;
+		margin:0;
+	}
+	
+		ul.cats li {
+			padding:0;
+			margin:0;
+			line-height:100%;
+		}
+	
+		ul.cats li a {
+			color:#5b5b5b;	
+		}
+		
+		ul.cats li.hl:first-child {
+			margin-top:0px;
+		}
+		
+		ul.cats li.hl {
+			margin-top:10px;
+		}
+	
+			ul.cats li.hl a {
+				color:#389ebc;
+				font-weight:bold;
+			}
+
+#left {
+	width:220px;
+	float:left;
+	margin-top:20px;
+}
+
+#center {
+	width:745px;
+	float:left;
+	margin-left:15px;
+}
+
+	#centerAds {
+		height:25px;
+		overflow:hidden;
+		padding:20px;
+		margin-bottom:20px;
+	}
+
+
+#select {
+	position:absolute;	
+	margin-left:-25px;
+	z-index:10;
+}
+
+#select_fill {
+	height:250px;	
+}
+
+
+
+/*  Facebook settings */
+
+.fb {
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+	font-size:12px;
+	overflow:auto;
+	background-color:#fff;
+	border:solid 1px #fff;
+	
+}
+
+.fb:hover {
+	cursor:pointer;
+	cursor:hand;
+	border:dashed 1px #d9d8d8;
+}
+
+.fb a {
+	color:#3b599d;	
+}
+
+/*  Post */
+
+.fb .post {
+	overflow:hidden;	
+	padding:10px;
+}
+
+	.fb .post .img {
+		float:left;
+		width:60px;
+	}
+	
+	.fb .post .txt {
+		float:left;
+		width:398px;
+	}
+	
+		.fb .post .txt .name {
+			margin-bottom:3px;
+		}
+		
+		.fb .post .txt .txtbottom {
+			font-size:11px;
+			margin-top:5px;
+			color:#999999;
+		}
+		
+			.fb .post .txt .txtbottom a {
+				color:#6d84b4;
+			}
+		
+		.fb .post_likes {
+			background-image:url('../gfx/generators/facebook/post_likes.jpg');
+			background-repeat:no-repeat;
+			width:381px;
+			height:20px;
+			margin-left:60px;
+			margin-bottom:1px;
+			padding-left:25px;
+			padding-top:7px;
+			font-size:11px;
+		}
+		
+		
+		.fb ul.comments {
+			margin:0;
+			padding:0;
+			margin-left:60px;
+		}
+		
+		.fb ul.comments li.first {
+			background-image:url('../gfx/generators/facebook/comment_no_likes.jpg');
+			background-position:left bottom;
+			background-repeat:no-repeat;
+			padding-top:7px;
+		}
+			
+		.fb ul.comments li {
+			list-style:none;
+			background-color:#f1f2f6;	
+			padding:4px;
+			margin:0;
+			font-size:11px;
+			overflow:hidden;
+			width:398px;
+			color:#333333;
+			line-height:130%;
+			margin-bottom:1px;
+		}
+		
+		
+			.fb ul.comments li .img {
+				float:left;
+				width:40px;
+			}
+			
+			.fb ul.comments li .txt {
+				float:left;
+				width:355px;
+			}
+			
+				.fb ul.comments li .txt .txtbottom {
+					color:#808080;
+				}
+		
+			.fb ul.comments li a {
+				color:#3b5998;
+			}
+			
+		.fb .post_write_comment {
+			background-color:#f1f2f6;
+			padding:4px;	
+			overflow:hidden;
+			width:398px;
+			margin-left:60px;
+		}
+		
+			.fb .post_write_comment .img {
+				float:left;
+				width:40px;
+			}
+			
+			.fb .post_write_comment .txt {
+				float:left;
+				width:355px;
+			}
+		
+		input.fbinput, textarea.fbinput {
+			background-color:#fff;
+			border:solid 1px #bdc7d8;
+			padding:3px 4px;
+			border-radius:0;
+			height:auto;
+			color:#777777;
+			font-size:11px;
+			font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+		}
+
+
+
+	/*  Chat */
+	
+	input,textarea {
+		width:90%;	
+	}
+	
+	.fb ul.chat {
+		overflow:hidden;	
+		margin:0;
+		padding:0;
+	}
+	
+		.fb ul.chat li {
+			overflow:hidden;	
+			margin:0;
+			padding:0;
+			margin-bottom:10px;
+		}
+	
+		.fb ul.chat li .img {
+			float:left;
+			width:42px;
+		}
+		
+		.fb ul.chat li .message {
+			float:left;
+			width:380px;
+			color:#333333;
+			line-height:140%;
+			font-size:13px;
+			margin-top:-4px;
+		}
+	
+		
+		.fb ul.chat li .message a {
+			font-weight:bold;
+			font-size:13.2px;
+		}
+		
+		.fb ul.chat li .date {
+			float:left;
+			width:20px;
+			color:#c4c9d1;
+			font-size:11px;
+			margin-left:20px;
+			text-align:right;
+		}
+		
+		.fb ul.chat li.date_seperator {
+			overflow:visible;
+			margin-bottom:25px;
+		}
+		
+		.fb ul.chat li .seperator {
+			text-align:center;
+			border-bottom:1px solid #e8e8e8;
+		}
+		
+		.fb ul.chat li .seperator div {
+			display:inline-block;
+			position:relative;
+			top:10px;
+			background:#fff;
+			padding:0 6px;
+			color:#c4bfbf;
+			font-size:11px;
+		}
+	
+	
+	
+/*  Twitter settings */
+
+.tw {
+	font-family:arial;
+	font-size:12px;
+	overflow:hidden;
+	background-color:#fff;
+	border:solid 1px #fff;
+	overflow:hidden;
+}
+
+.tw:hover {
+	cursor:pointer;
+	cursor:hand;
+	border:dashed 1px #d9d8d8;
+}
+
+	.tw .post {
+		clear:both;
+		overflow:hidden;
+	}
+	
+		.tw .post .img {
+			float:left;
+			width:60px;
+		}
+		
+		.tw .post .name {
+			float:left;
+			width:230px;
+			padding-top:9px;
+		}
+		
+			.tw .post .name .username {
+				color:#333333;
+				display:block;
+				font-size:18px;
+				font-weight:bold;
+			}
+			
+			.tw .post .name .at {
+				color:#999999;
+				font-size:14px;
+				display:block;
+				padding-top:4px;
+			}
+		
+		.tw .post .follow {
+			float:right;
+			width:130px;
+		}
+			
+		.tw .post .message {
+			font-family:Georgia, "Times New Roman", Times, serif;
+			font-size:22px;
+			color:#333335;
+			margin:15px 0 10px 0;
+			line-height:120%;
+			width:420px;
+		}
+		
+			.tw .post .message span.link {
+				color:#0084b4;
+			}
+		
+		.tw .post ul#options {
+			padding:0;
+			margin:0;
+			overflow:auto;
+		}
+		
+			.tw .post ul#options li {
+				color:#0084b4;
+				float:left;
+				list-style:none;	
+				margin-right:10px;
+			}
+			
+			.tw .post ul#options li img {
+				vertical-align:top;
+			}
+			
+		.tw .post .date {
+			color:#999999;
+			font-size:12px;
+			display:block;
+			margin-top:10px;
+		}
+		
+		
+	.tw .chat {
+		background-color:#f5f8fa;	
+		width:525px;
+	}
+	
+		.tw .chat .top {
+			background-image:url('../gfx/generators/twitter/message_top.jpg');
+			background-repeat:repeat-x;
+			height:14px;
+			border-bottom:solid 1px #e8e8e8;
+			font-size:18px;
+			font-family:arial;
+			font-weight:bold;	
+			color:#333333;
+			padding:15px;	
+			overflow:hidden;
+		}
+		
+			.tw .chat .top .directmessages {
+				color:#072250;		
+			}
+		
+		
+		.tw .chat ul.messages {
+			padding:15px;
+			margin:0;
+			overflow:hidden;
+		}
+				
+			.tw .chat ul.messages li {
+				list-style:none;
+				overflow:auto;
+				clear:both;
+				margin-bottom:20px;
+			}
+			
+			
+				.tw .chat ul.messages li.left .messagebox .date {
+					color:#bbbcbe;
+					font-size:11px;
+					text-align:center;
+					vertical-align:top;
+					width:380px;
+					overflow:hidden;
+					clear:both;
+				}			
+			
+			
+				.tw .chat ul.messages li.left .img {
+					float:left;
+					width:54px;
+				}
+				
+					.tw .chat ul.messages li.left .img .arrow {
+						background-image:url('../gfx/generators/twitter/message_left_arrow.jpg');
+						background-repeat:no-repeat;
+						position:absolute;
+						width:6px;
+						height:10px;
+						margin-left:60px;
+						margin-top:-20px;
+					}
+				
+				.tw .chat ul.messages li.left .messagebox {
+					float:left;
+					max-width:380px;
+				}
+				
+					.tw .chat ul.messages li.left .messagebox .message {
+						background-color:#f5f5f5;	
+						border:solid 1px #dddee0;
+						border-radius:4px;
+						max-width:310px;
+						padding:6px 10px;
+						font-family:arial;
+						margin-left:10px;
+						float:left;
+						color:#333333;
+						line-height:140%;
+					}
+					
+					
+				.tw .chat ul.messages li.right .messagebox .date {
+					color:#bbbcbe;
+					font-size:11px;
+					text-align:center;
+					vertical-align:top;
+					width:367px;
+					overflow:hidden;
+					clear:both;
+				}	
+					
+				.tw .chat ul.messages li.right .img {
+					float:right;
+					width:54px;
+				}
+				
+					.tw .chat ul.messages li.right .img .arrow {
+						background-image:url('../gfx/generators/twitter/message_right_arrow.jpg');
+						background-repeat:no-repeat;
+						position:absolute;
+						width:6px;
+						height:10px;
+						margin-left:-15px;
+						margin-top:-20px;
+					}
+				
+				.tw .chat ul.messages li.right .messagebox {
+					float:right;
+					max-width:380px;
+					margin-right:13px;
+				}
+				
+					.tw .chat ul.messages li.right .messagebox .message {
+						background-color:#e5f2fb;	
+						border:solid 1px #dce0e3;
+						border-radius:4px;
+						max-width:310px;
+						padding:6px 10px;
+						font-family:arial;
+						margin-left:10px;
+						float:right;
+						color:#333333;
+						line-height:140%;
+					}
+					
+					
+
+.ya {
+	font-family:arial;
+	font-size:12px;
+	overflow:hidden;
+	background-color:#fff;
+	border:solid 1px #fff;
+	overflow:hidden;
+	padding:20px;
+}
+
+.ya:hover {
+	cursor:pointer;
+	cursor:hand;
+	border:dashed 1px #d9d8d8;
+}
+
+	.ya .question {
+		font-family:arial;
+		font-size:12px;
+		overflow:hidden;
+		background-color:#fff;
+		border:solid 1px #cccccc;
+		border-bottom:0;
+		overflow:hidden;
+		background-image:url('../gfx/generators/yahoo-answers/bg.jpg');
+		background-repeat:repeat-x;
+		width:630px;
+		margin:0 auto;
+		padding:20px;
+	}
+	
+		.ya .question a {
+			font-size:13px;
+			color:#006699;
+			line-height:100%;
+		}
+		
+		.ya .question a.small {
+			font-size:11px;
+		}
+	
+		.ya .question .profile {
+			float:left;
+			width:90px;
+			margin-right:25px;
+			text-align:center;
+		}
+		
+			.ya .question .profile .img {
+				width:50px;
+				height:50px;
+				border:solid 1px #cccccc;
+				padding:3px;
+				background-color:#fff;
+				margin:0 auto;
+				margin-bottom:5px;
+			}
+			
+			.ya .question .profile .profilename {
+				overflow:hidden;
+				width:100px;	
+			}
+			
+		.ya .question .thequestion {
+			float:left;
+			width:510px;
+			padding-bottom:40px;
+		}
+		
+			.ya .question .thequestion .green {
+				font-weight:bold;
+				font-size:16px;
+				color:#43b607;
+				margin-bottom:20px;
+			}
+		
+			.ya .question .thequestion .q {
+				font-weight:bold;
+				font-size:21px;
+				color:#000;
+				margin-bottom:20px;
+				line-height:120%;
+			}
+			
+			.ya .question .thequestion .message {
+				font-size:13px;
+				color:#333333;
+			}
+			
+			.ya .question .thequestion .date {
+				font-size:11px;
+				color:#666666;
+				margin-top:10px;
+			}
+			
+			.ya .question .thequestion .btn-answer {
+				border-left:solid 1px #006699;
+				border-right:solid 1px #006699;	
+				background-image:url('../gfx/generators/yahoo-answers/btn_answer.jpg');
+				color:#fff;
+				text-align:center;
+				width:132px;
+				font-size:13px;
+				font-weight:bold;
+				padding:5px 0;
+				margin-top:15px;
+			}
+
+	.ya .bestanswer {
+		font-family:arial;
+		font-size:12px;
+		overflow:hidden;
+		background-color:#fff;
+		border:solid 1px #cccccc;
+		border-bottom:0;
+		border-top:dotted 1px #ccc;
+		overflow:hidden;
+		background-repeat:repeat-x;
+		width:630px;
+		margin:0 auto;
+		padding:20px;
+	}
+	
+		.ya .bestanswer .bestanswer_green {
+			font-weight:bold;
+			font-size:14px;
+			color:#43b607;	
+		}
+		
+		.ya .bestanswer .bestanswer_misc {
+			font-size:13px;
+			color:#000;	
+		}
+		
+		.ya .bestanswer .percent-and-votes {
+			font-size:14px;	
+			color:#333333;
+		}
+		
+		.ya .bestanswer .percent-and-votes strong {
+			color:#333333;
+		}
+		
+		.ya .bestanswer .percentbar {
+			width:44px;
+			height:14px;
+			background-color:#ffffcd;
+			border:solid 1px #cccccc;
+		}
+		
+		.ya .bestanswer .votes {
+			background-image:url('../gfx/generators/yahoo-answers/votes.jpg');
+			background-repeat:no-repeat;
+			background-position:left;
+			width:198px;
+			height:19px;
+			margin-top:5px;
+			border:solid 1px #cccccc;
+		}
+		
+		.ya .bestanswer .votes .inside {
+			padding:0px 2px 0px 25px;
+			font-size:12px;
+			color:#333333;
+		}
+		
+		.ya .bestanswer .votes .inside strong {
+			color:#333333;
+		}
+
+
+	
+	.ya .bottom {
+		background-image:url('../gfx/generators/yahoo-answers/bottom.jpg');
+		background-repeat:repeat-x;
+		border:solid 1px #cccccc;
+		border-top:0;
+		width:670px;
+		overflow:hidden;
+		color:#3366b8;
+		font-size:12px;
+		border-top:solid 1px #cccccc;
+		margin-left:4px;
+	}
+	
+	
+
+ul#myimages {
+	clear:both;
+	overflow:auto;
+	margin:0;
+	padding:0;
+	height:200px;
+}
+
+ul#myimages li {
+	float:left;	
+	background-color:#fff;
+	border:solid 1px #eeeeee;
+	width:45px;
+	height:45px;
+	padding:5px;
+	list-style:none;
+	margin:2px;
+}
+
+ul#myimages li:hover {
+	background-color:#eeeeee;
+	border:solid 1px #eeeeee;
+	cursor:pointer;
+}
+
+
+
+
+
+.box {
+	background-color:#fff;
+	border:solid 1px #efefef;
+	overflow:hidden;
+	padding:10px;
+	margin-top:10px;	
+	border-radius:4px;
+}
+
+label {
+	display:inline-block;
+	text-align:center;
+	font-size:11px;
+	vertical-align:bottom;
+}
+
+small {
+	font-size:10px;	
+	color:#8c8b8b;
+}
+
+.label-for {
+	margin-right:3px;
+}
+
+.center {
+	text-align:center;	
+}
+
+.seperator_hor {
+	background-image:url('../gfx/seperator_hor.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	width:772px;
+	height:24px;	
+	margin:15px 0;
+}
+
+.clear {
+	clear:both;	
+}
+
+
+.icon 			{	vertical-align:top;	}

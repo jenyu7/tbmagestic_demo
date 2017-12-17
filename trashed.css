@@ -401,3 +401,12 @@
 		margin-left:4px;
 	}
 	
+	
+	html {
+	background-color:#fafafa;
+	background-image:url('../gfx/bg.jpg');
+	background-repeat:repeat-x;
+    overflow-x: hidden;
+	overflow-y: scroll;
+	font-size:11px;		
+}

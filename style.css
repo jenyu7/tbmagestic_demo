@@ -18,15 +18,6 @@ tfoot, thead, tr, th, td {
 	color:#5b5b5b;
 }
 
-html {
-	background-color:#fafafa;
-	background-image:url('../gfx/bg.jpg');
-	background-repeat:repeat-x;
-    overflow-x: hidden;
-	overflow-y: scroll;
-	font-size:11px;		
-}
-
 body{ height:100%; }
 
 
@@ -133,16 +124,6 @@ a:hover {
 	background-color:#fff;
 	border:solid 1px #fff;
 	
-}
-
-.fb:hover {
-	cursor:pointer;
-	cursor:hand;
-	border:dashed 1px #d9d8d8;
-}
-
-.fb a {
-	color:#3b599d;	
 }
 
 /*  Post */

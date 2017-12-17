@@ -36,4 +36,133 @@ body
     z-index: 9;
     width: 20%; 
 }
+/*  Facebook settings */
+
+.fb {
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+	font-size:12px;
+	overflow:auto;
+	background-color:#fff;
+	border:solid 1px #fff;
+	
+}
+
+/*  Post */
+
+.fb .post {
+	overflow:hidden;	
+	padding:10px;
+}
+
+	.fb .post .img {
+		float:left;
+		width:60px;
+	}
+	
+	.fb .post .txt {
+		float:left;
+		width:398px;
+	}
+	
+		.fb .post .txt .name {
+			margin-bottom:3px;
+		}
+		
+		.fb .post .txt .txtbottom {
+			font-size:11px;
+			margin-top:5px;
+			color:#999999;
+		}
+		
+			.fb .post .txt .txtbottom a {
+				color:#6d84b4;
+			}
+		
+		.fb .post_likes {
+			background-image:url('../gfx/generators/facebook/post_likes.jpg');
+			background-repeat:no-repeat;
+			width:381px;
+			height:20px;
+			margin-left:60px;
+			margin-bottom:1px;
+			padding-left:25px;
+			padding-top:7px;
+			font-size:11px;
+		}
+		
+		
+		.fb ul.comments {
+			margin:0;
+			padding:0;
+			margin-left:60px;
+		}
+		
+		.fb ul.comments li.first {
+			background-image:url('../gfx/generators/facebook/comment_no_likes.jpg');
+			background-position:left bottom;
+			background-repeat:no-repeat;
+			padding-top:7px;
+		}
+			
+		.fb ul.comments li {
+			list-style:none;
+			background-color:#f1f2f6;	
+			padding:4px;
+			margin:0;
+			font-size:11px;
+			overflow:hidden;
+			width:398px;
+			color:#333333;
+			line-height:130%;
+			margin-bottom:1px;
+		}
+		
+		
+			.fb ul.comments li .img {
+				float:left;
+				width:40px;
+			}
+			
+			.fb ul.comments li .txt {
+				float:left;
+				width:355px;
+			}
+			
+				.fb ul.comments li .txt .txtbottom {
+					color:#808080;
+				}
+		
+			.fb ul.comments li a {
+				color:#3b5998;
+			}
+			
+		.fb .post_write_comment {
+			background-color:#f1f2f6;
+			padding:4px;	
+			overflow:hidden;
+			width:398px;
+			margin-left:60px;
+		}
+		
+			.fb .post_write_comment .img {
+				float:left;
+				width:40px;
+			}
+			
+			.fb .post_write_comment .txt {
+				float:left;
+				width:355px;
+			}
+		
+		input.fbinput, textarea.fbinput {
+			background-color:#fff;
+			border:solid 1px #bdc7d8;
+			padding:3px 4px;
+			border-radius:0;
+			height:auto;
+			color:#777777;
+			font-size:11px;
+			font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+		}
+
 }
